@@ -57,6 +57,8 @@ public class SessionManager {
         }
     }
 
+    // 스트릠에서 mySessionId 라는 이름을 가진 게 있는지 확인
+    // findAny() : 조건에 맞는 쿠키가 있으면 그 쿠키 반환, 없으면 null 반환
     public Cookie findCookie(HttpServletRequest request, String cookieName) {
         if (request.getCookies() == null) {
             return null;
